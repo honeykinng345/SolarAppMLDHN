@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="spinerItem"
+            type="String" />
+        <variable
+            name="pos"
+            type="int" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvSpinerItem"
+            android:textColor="@color/colorblack"
+            android:maxLines="1"
+            android:text="sdk"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorblack"
+            android:id="@+id/view"
+            android:layout_below="@+id/tvSpinerItem"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+</layout>
+
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.learn.degger.solarappmldhn.utils.StringUtilisDataBind"/>
+        <variable
+            name="solarPro"
+            type="com.learn.degger.solarappmldhn.models.FetchAllSolarProductList" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp"
+        android:background="#fff"
+        app:cardBackgroundColor="#fff">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productIconIv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_add_shopping_cart_primary">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/nextIV"
+                android:layout_toEndOf="@+id/productIconIv"
+                android:orientation="vertical"
+                tools:ignore="UnknownId">
+
+                <TextView
+                    android:id="@+id/discountNoteTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_react05"
+                    android:padding="5dp"
+                    android:text="@{StringUtilisDataBind.getPrice(solarPro.discountNotes)}"
+                    android:textColor="@color/colorGreen"
+                    android:visibility='@{solarPro.discountAvaliabel.equals("1") ?  View.VISIBLE : View.GONE}' />
+
+
+                <TextView
+                    android:id="@+id/detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_shape"
+                    android:padding="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="end"
+                    android:text="Detailed"
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@{solarPro.title}"
+
+                    android:textColor="@color/colorblack">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/cartTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Add To Cart"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_add_shopping_cart_primary"
+                    android:textColor="@color/colorGreen" />
+
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Add Comment"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_comment"
+                    android:textColor="@color/colorGreen" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/discountPriceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:visibility='@{solarPro.discountAvaliabel.equals("1") ? View.VISIBLE : View.GONE}'
+                        android:text='@{solarPro.discountNotes,default="10"}'
+                        android:textColor="@color/colorGreen" />
+                    <TextView
+                        android:id="@+id/origonalPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/discountPriceTV"
+                        android:text="@{solarPro.origonalPrice}"
+                        app:strikeThrough='@{solarPro.discountAvaliabel.equals("1")? true: false}'
+                        android:textColor="@color/colorGreen">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/nextIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_next_gray">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

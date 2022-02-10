@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="appliance"
+            type="com.learn.degger.solarappmldhn.utils.Appliances" />
+
+        <variable
+            name="listner"
+            type="com.learn.degger.solarappmldhn.interfacs.ClickListner" />
+
+        <variable
+            name="position"
+            type="int"/>
+    </data>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/holo_orange_light"
+   android:onClick="@{()->listner.getPro(appliance,position)}"
+    android:layout_marginTop="8dp"
+    android:background="@color/colorGreen"
+
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/relavtive1"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:id="@+id/AnTv"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:text="Rating In wts"
+                android:id="@+id/RIWtv"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentEnd="true"
+                android:text="Quantity"
+                android:id="@+id/qTv"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relavtive2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relavtive1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/AnV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{appliance.mApplianceName}'
+                android:textColor="@color/colorblack">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/RIWV"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text='@{appliance.mApplianceWattage}'
+                android:textColor="@color/colorblack">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/qV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:text='@{appliance.mApplianceQuantity}'
+                android:textColor="@color/colorblack">
+
+            </TextView>
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:layout_margin="5dp"
+            android:drawableRight="@drawable/ic_baseline_delete_forever_24"
+            android:padding="10dp"
+            android:layout_below="@+id/relavtive2"
+            android:text="Delete"
+
+            android:textColor="@color/whiteColor"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/round_shape"
+
+            android:minWidth="100dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</layout>

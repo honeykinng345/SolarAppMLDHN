@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/calc_btn_decor.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/ic_add_shopping_cart_primary.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/ic_dropdown.xml" value="0.284375" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/ic_remove_white.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/input_field_decoration.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/reactcircle.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/drawable/spinner.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/activity_login.xml" value="0.2682291666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/activity_main.xml" value="0.2484375" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/appliance_layout.xml" value="0.21510416666666668" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/fragment_global.xml" value="0.17604166666666668" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/fragment_home.xml" value="0.2682291666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/fragment_solar_calculator.xml" value="0.2682291666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/fragment_solar_parts.xml" value="0.1644021739130435" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/item_solar_shop.xml" value="0.2682291666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/layout/spiner_item.xml" value="0.13044579533941236" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/menu/bottom_nav.xml" value="0.2484375" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14791666666666667" />
+        <entry key="..\:/alldata/AndroidProjects/SolarAppMLDHN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14791666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
